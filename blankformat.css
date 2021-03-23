@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    display:block;
+
+    background-color:  #eeeeee;
+    cursor: default;
+  }
+
+  
+  
+  .h1 {
+    font-family: questa-grande,serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    position: relative;
+    color:rgb(0, 0, 0);
+} 
+
+.container {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: center;
+}
+
+/* cursor effects */
+.cursor{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #c6c6c6;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: .1s;
+  box-shadow:  0 0 50px 10px rgb(0, 0, 0);
+  /* in order: x offset, y offset, blur size, spread size, color */
+  /* blur size and spread size are optional (they default to 0) */
+}
+
+.cursor2{
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: .15s;
+}
+
+.content:hover ~ .cursor{
+  transform: translate(-50%, -50%) scale(1.5);
+  background-color: #c6c6c6;
+  opacity: .5;
+}
+
+.content:hover ~ .cursor2{
+  opacity: 0;
+} 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Battle</title>
+    <link rel="stylesheet" type="text/css" href="surveillance.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hyn6twh.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hyn6twh.css">
+    
+  </head>
+  <body>
+    <div class="container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Pz4zW8VTOk4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="description">
+      <h1>It's Everywhere, You See.</h1>
+      <h2>Full HD Color Video, 00"00"30</h2>
+      <p>Given the challenge to produce a motion graphic of any subject matter, I chose to create a short motion graphic video centered around the concept of surveillance and privacy. I incorporated the symbols of the eyes and the camera to allude to the idea of being watched all the time and to push the question of whether or not we really have privacy in this day and age. </p>
+  </div>
+     <!-- cursor effects -->
+<div class="cursor"></div>
+<div class="cursor2"></div>
+
+<script>
+  var cursor = document.querySelector(".cursor");
+  var cursor2 = document.querySelector(".cursor2");
+  document.addEventListener("mousemove",function(e){
+    cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+  });
+</script>
+  </body>
+</html>

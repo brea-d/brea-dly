@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Breanna Dulay | Digital Media</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/33d7247fc6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/hyn6twh.css">
+
+
+  </head>
+  <body>
+    <!-- home page first half -->
+    <div class="container">
+      <nav>
+        <div class="menu-menu-1-container">  
+          <ul id="menu-menu-1">
+            <li id="menu-item-4" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-4"><a href="index.html">Home</a></li>
+            <li id="menu-item-5" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5"><a href="bio.html">About Me</a></li>  
+      </ul>
+    </div>				
+    </nav>
+      </div>
+
+
+    <!-- Square boxes gallery w/ hover effects linked to work -->
+    <div class="grid-container">
+      <div class="grid-item">
+        <a href= "photo.html">
+        <img src="thumbnail_dreamseq.jpg" class="overlay" alt="Photographyl" style="max-width:50%; height:auto;">
+        </a>
+        <h2 class="middletext">Photography</h2>
+      </div>
+      <div class="grid-item">
+        <a href="digitalmedia.html">
+        <img src="thumbnail_game of life.jpg" class="overlay" alt="Digital Media" style="max-width:50%; height:auto;">
+        </a>
+        <h2 class="middletext">Code</h2>
+      </div>
+      <div class="grid-item">
+        <a href= "illustration.html">
+        <img src="https://i.imgur.com/0JJSbC3.jpg" class="overlay" alt="Illustration" style="max-width:50%; height:auto;">
+        </a>
+        <h2 class="middletext">Design</h2>
+      </div>
+      <div class="grid-item">
+        <a href="3d.html">
+        <img src="3drabbit.png" class="overlay" alt="3D" style="max-width:50%; height:auto;">
+        </a>
+        <h2 class="middletext">3D</h2>
+      </div>
+      <div class="grid-item">
+        <a href="video.html">
+        <img src="thumbnail_thebattle.jpg" class="overlay" alt="Video" style="max-width:50%; height:auto;">
+        </a>
+        <h2 class="middletext">Video</h2>
+      </div>
+      <div class="grid-item">
+        <a href="https://sstrinkets.com/">
+        <img src="sstrinkets_logo_nohandle.png" class="overlay" alt="Shop" style="max-width:50%; height:auto;">
+        </a>
+      </div>
+    </div>
+
+          <!-- sidebar social -->
+    <div class="sidebar">
+      <ul class="fa-ul">
+        <i class="time-container fa fa-save">
+          <a id="time">Keep up <br>with me!</a>
+      </i>
+        <li><a href="https://www.instagram.com/breadilyy/"><i class="fab fa-instagram"></i></a></li>
+        <li><i class="fab fa-deviantart"></i></li>  
+        <li><a href="https://www.linkedin.com/in/breadyish/"><i class="fab fa-linkedin-in"></i></li>
+        <li><a href="email.html"><i class="far fa-envelope"></i></li>
+        </ul>
+      </div>
+    </div> 
+
+<!-- cursor effects -->
+<div class="cursor"></div>
+<div class="cursor2"></div>
+
+<script>
+  var cursor = document.querySelector(".cursor");
+  var cursor2 = document.querySelector(".cursor2");
+  document.addEventListener("mousemove",function(e){
+    cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+  });
+</script>
+    </body>
+  </html>

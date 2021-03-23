@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Un/limited Resource</title>
+    <link rel="stylesheet" type="text/css" href="unlimitedresource.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hyn6twh.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hyn6twh.css">
+    
+  </head>
+  <body>
+    <div class="container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/I14mGfAr_jI?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="description">
+      <h1>Un/limited Resource</h1>
+      <h2>Full HD Color Video, 00"02"03</h2>
+      <p>I created this video in order to explore the idea of time as both an unlimited and limited resource. In theory, time is an unlimited resource, but at the same time, it is not uncommon to feel as if our time is running out. Time is unlimited, but in reference to our daily lives, how much time do we actually have with all these deadlines and timers? I aimed to recreate that feeling of having so much time on your hands but also seeing that time slip through your fingers.</p>
+  </div>
+    
+     <!-- cursor effects -->
+<div class="cursor"></div>
+<div class="cursor2"></div>
+
+<script>
+  var cursor = document.querySelector(".cursor");
+  var cursor2 = document.querySelector(".cursor2");
+  document.addEventListener("mousemove",function(e){
+    cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+  });
+</script>
+  </body>
+</html>

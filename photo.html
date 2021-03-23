@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Breanna Dulay | Photography</title>
+    <link rel="stylesheet" type="text/css" href="photo.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hyn6twh.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hyn6twh.css">
+  </head>
+  <body>
+    <div class="h1"><h1>Photography</h1></div>
+    <div class="thumbnail">
+      <a href="dreamsequence.html">
+      <img src="Caesura.jpg" alt="Dream Sequence" style="max-width:60%; height:auto;">
+      </a>
+      <br><br>
+      <a href="senseofself.html">
+      <img src="SS7.jpg" alt="Sense of Self" style="max-width: 60%; height:auto;">
+      </a>
+    </div>
+
+    <!-- cursor effects -->
+<div class="cursor"></div>
+<div class="cursor2"></div>
+
+<script>
+  var cursor = document.querySelector(".cursor");
+  var cursor2 = document.querySelector(".cursor2");
+  document.addEventListener("mousemove",function(e){
+    cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+  });
+</script>
+  </body>
+</html>

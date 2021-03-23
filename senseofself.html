@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sense of Self</title>
+    <link rel="stylesheet" type="text/css" href="senseofself.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hyn6twh.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hyn6twh.css">
+  </head>
+  <body>
+    <div id="mydiv">
+        <div id="mydivheader">
+            <img src="SS1.jpg" alt="SS1" style="max-width:30%; height:auto;">
+            <img src="SS2.jpg" alt="SS2" style="max-width:30%; height:auto;">
+            <img src="SS3.jpg" alt="SS3" style="max-width:30%; height:auto;">
+            <img src="SS4.jpg" alt="SS4" style="max-width:30%; height:auto;">
+            <img src="SS5.jpg" alt="SS5" style="max-width:30%; height:auto;">
+            <img src="SS6.jpg" alt="SS6" style="max-width:30%; height:auto;">
+            <img src="SS7.jpg" alt="SS7" style="max-width:30%; height:auto;">
+        </div>
+      </div>
+    <div class="description">
+    <h2>Threads of my Being</h2>
+    <h3>Photography, 2020</h3>
+    <pre><p>
+<em>The Threads of My Being</em> is a black and white photography series that I 
+created in order to physicalize what I believe my sense of self to look like. I chose 
+to define my sense of self by photographing the everyday items I feel contribute to my 
+identity and to show how those items are woven together to make up who I am. The items 
+I’ve chosen, from my childhood Ilocano bracelet to a simple lock and key are items that
+hold little relevance to me by themselves, but once woven together, create a new meaning
+relevant to my identity. 
+    </p>
+    </pre>
+    </div>
+
+    <!-- cursor effects -->
+<div class="cursor"></div>
+<div class="cursor2"></div>
+
+<script>
+  var cursor = document.querySelector(".cursor");
+  var cursor2 = document.querySelector(".cursor2");
+  document.addEventListener("mousemove",function(e){
+    cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+  });
+</script>
+
+<!-- draggable element -->
+<script>
+    //Make the DIV element draggagle:
+    dragElement(document.getElementById("mydiv"));
+    
+    function dragElement(elmnt) {
+      var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+      if (document.getElementById(elmnt.id + "header")) {
+        /* if present, the header is where you move the DIV from:*/
+        document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+      } else {
+        /* otherwise, move the DIV from anywhere inside the DIV:*/
+        elmnt.onmousedown = dragMouseDown;
+      }
+    
+      function dragMouseDown(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // get the mouse cursor position at startup:
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        document.onmouseup = closeDragElement;
+        // call a function whenever the cursor moves:
+        document.onmousemove = elementDrag;
+      }
+    
+      function elementDrag(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // calculate the new cursor position:
+        pos1 = pos3 - e.clientX;
+        pos2 = pos4 - e.clientY;
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        // set the element's new position:
+        elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+        elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+      }
+    
+      function closeDragElement() {
+        /* stop moving when mouse button is released:*/
+        document.onmouseup = null;
+        document.onmousemove = null;
+      }
+    }
+    </script>
+    
+  </body>
+</html>
